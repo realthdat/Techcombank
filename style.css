@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
 
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('NunitoSans.ttf') format('truetype'),
+         url('NunitoSans.woff2') format('woff2'),
+         url('NunitoSans.woff') format('woff');
+    font-display: swap;
+  }
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
