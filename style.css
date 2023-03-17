@@ -1,28 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
 * {
     font-family: 'Nunito Sans', sans-serif;
-  }
-  
-  
-  .container {
+}
+
+
+.container {
     position: absolute;
     top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content;
+    width: 600px;
     height: fit-content;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 1px solid rgb(181, 196, 206);
     padding: 20px;
     border-radius: 5px;
-  }
-  
-  .box-group {
+}
+
+.box-group {
     position: relative;
     display: inline-block;
-  }
-  
-  .button {
+}
+
+.button {
     width: 100%;
     height: 40px;
     font-size: 20px;
@@ -35,37 +42,37 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-  }
-  
-  .item {
+}
+
+.item {
     width: 100%;
     padding-top: 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-  }
-  
-  .input {
+}
+
+.input {
     width: 100%;
     border-radius: 5px;
     border: 1px solid rgb(191, 189, 189);
     padding: 3px;
     font-size: 20px;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 28px;
     font-weight: bold;
     margin: 0;
-  }
-  
-  .item label {
+}
+
+.item label {
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .loading {
+}
+
+.loading {
     position: relative;
     top: 0;
     right: 0;
@@ -73,9 +80,9 @@
     bottom: 0;
     /* margin: auto; */
     width: 80px;
-  }
-  
-  #container-loading {
+}
+
+#container-loading {
     z-index: 10;
     border-radius: 5px;
     justify-content: center;
@@ -90,59 +97,70 @@
     height: 100%;
     /* display: flex !important; */
     display: none;
-  }
-  
-  #error {
+}
+
+#error {
     color: red;
     font-size: 10px;
     font-weight: bold;
     font-style: italic;
     display: none;
+}
+
+.bill-container {
+    font-size: 20px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
   }
-  
-  @media (max-width: 770px) {
+
+@media (max-width: 768px) {
     .container {
-      width: 50%;
-      padding: 3px;
+        width: 95%;
+        padding: 3px;
     }
-  
+
     .title {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .item label {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .input {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .button {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .bill-container {
-      font-size: 18px;
-      width: 100%;
-      padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
     }
-  
+
     .bill-container h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
+        font-size: 26px;
+        margin-bottom: 10px;
     }
-  
+
     .bill-container p span {
-      margin-left: 0px;
-      font-size: 18px;
+        margin-left: 0px;
+        font-size: 18px;
     }
-  
+
     .bill-container p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  
-  #exist-key {
+}
+
+#exist-key {
     font-size: 10px
-  }
+}
