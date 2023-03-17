@@ -10,7 +10,7 @@
 
 
 .container {
-    margin: auto;
+    margin: 0 auto;
     width: 600px;
     height: fit-content;
     background-color: white;
