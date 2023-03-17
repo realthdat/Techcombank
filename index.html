@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banking Landing</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
@@ -16,6 +16,7 @@
   </head>
 
   <body onload="init()">
+    <img style="height: 40px" src="logo-techcombank.svg" alt="tech-img" />
     <div style="text-align: center">
       <p id="exist-key"></p>
     </div>
@@ -59,15 +60,15 @@
         <textarea rows="4" cols="50" id="message" class="input"></textarea>
       </div>
 
-      <button class="button" type="button" onclick="submitTransfer()">
+      <button class="button" type="button" style="line-height: 40px;" onclick="submitTransfer()">
         Confirm
       </button>
       <p id="error"></p>
     </form>
-
+    
 
     <div class="bill-container" id="bill" style="display: none; background:
-      url(back.svg)">
+      url(back.svg);">
       <bb-icon-ui name="transfer-success" class="mb-4">
         <img src="transfer-success.svg" /></bb-icon-ui><br />
       <img style="height: 100%" src="logo-techcombank.svg" alt="tech-img" />
@@ -95,14 +96,15 @@
         Transaction ID<br /><strong><span style="letter-spacing: 1px"
             id="bill-code"></span></strong>
       </p>
-
+      <br><br>
       <button class="button">
         <a href="https://techcombank.com/" style="color: white; text-decoration:
-          none">
+          none; line-height: 40px;">
           Done
         </a>
       </button>
     </div>
+    
 
     <script>
     function submitTransfer() {
